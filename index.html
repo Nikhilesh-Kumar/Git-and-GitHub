@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Git and GitHub</title>
 </head>
 <body>
     <div style="width: 500px; margin: auto;">
@@ -12,11 +12,31 @@
     </div>
     <div style="width: 500px; margin: auto;">
         <p>Install git onto your system</p>
-        <h2>Description</h2>
+        <h2>Follow the Steps</h2>
+        <h3>Checking Installation:</h3>
         <p>After installing the git into your system check through the below command whether git is installed onto the system properly or not</p>
         <li>git --version</li>
+        <h3>Initializing Git:</h3>
         <p>After confirming the git onto the system the git is initialized on the current project through below command</p>
         <li>git init</li>
+        <h3>Checking Status:</h3>
+        <p>After initializing git locally onto the system the status for the current untracked changes is checked using</p>
+        <li>git status</li>
+        <h3>Adding Files:</h3>
+        <p>Now the untracked files can be added to the git using below command</p>
+        <li>git add filename (for a specific file)</li>
+        <li>git add . (for all untracked changes in the current directory)</li>
+        <p>You can also use <li>git add -A</li> to include deletions as well as new/modified files.</p>
+        <h3>Save the changes:</h3>
+        <p>To actually save these changes to your history after adding them, you need to commit them:</p>
+        <li>git commit -m "Your preferred message for the current save"</li>
+        <h3>Confirm your Identity:</h3>
+        <p>Identify your self if you get error while doing commit for the changes</p>
+        <li>git config --global user.name "your name"</li>
+        <li>git config --global user.email "your email"</li>
+        <h3>History of Committed Changes:</h3>
+        <p>For viewing the history of all committed changes or saved files in repository, use</p>
+        <li>git log</li>
     </div>
 </body>
 </html>

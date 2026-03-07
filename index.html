@@ -41,7 +41,7 @@
         <h4>Hard reset (discards changes)</h4>
         <p>If want to undo the saved changes and move to previous version of your code</p>
         <p>-> This moves your branch pointer to the specified commit and deletes all changes after it</p>
-        <li>git reset --hard "required previous version to switch"</li>
+        <li>git reset --hard "required previous version to switch(commit-hash)"</li>
         <h4>Soft reset (keeps changes staged):</h4>
         <p>If want to move to previous version of code without deleting the code</p>
         <p>-> This moves your branch pointer to the specified commit but keeps your changes in the staging area</p>
@@ -69,6 +69,7 @@
         <p>Merge a branch into the current branch:</p>
         <li>git merge (branch-name)</li>
         <p>You don’t merge “local branch name” into main directly. Instead, you merge feature branch</p>
+        <p><li>git merge</li>merges the specified branch into the current branch</p>
         <br><br>
     </div>
 </body>

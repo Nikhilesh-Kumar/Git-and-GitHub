@@ -14,10 +14,10 @@
         <p>Install git onto your system</p>
         <h2>Follow the Steps</h2>
         <h3>Checking Installation:</h3>
-        <p>After installing the git into your system check through the below command whether git is installed onto the system properly or not</p>
+        <p>After installing git onto your system check whether git is installed onto the system properly</p>
         <li>git --version</li>
         <h3>Initializing Git:</h3>
-        <p>After confirming the git onto the system the git is initialized on the current project through below command</p>
+        <p>After confirming the git onto the system the git is initialized for the current project through below command</p>
         <li>git init</li>
         <h3>Checking Status:</h3>
         <p>After initializing git locally onto the system the status for the current untracked changes is checked using</p>
@@ -28,7 +28,7 @@
         <li>git add . (for all untracked changes in the current directory)</li>
         <p>You can also use <li>git add -A</li> to include deletions as well as new/modified files.</p>
         <h3>Save the changes:</h3>
-        <p>To actually save these changes to your history after adding them, you need to commit them:</p>
+        <p>To actually save these changes into the history, after adding them, you need to commit them</p>
         <li>git commit -m "Your preferred message for the current save"</li>
         <h3>Confirm your Identity:</h3>
         <p>Identify your self if you get error while doing commit for the changes</p>
@@ -40,19 +40,19 @@
         <h3>Resetting to a Previous Commit:</h3>
         <h4>Hard reset (discards changes)</h4>
         <p>If want to undo the saved changes and move to previous version of your code</p>
-        <p>-> This moves your branch pointer to the specified commit and deletes all changes after it</p>
-        <li>git reset --hard "required previous version to switch(commit-hash)"</li>
-        <h4>Soft reset (keeps changes staged):</h4>
+        <li>git reset --hard "required previous version to switch (commit-hash)"</li>
+        <p>> This moves your branch pointer to the specified commit and deletes all changes after it</p>
+        <h4>Soft reset (keeps the changes staged):</h4>
         <p>If want to move to previous version of code without deleting the code</p>
-        <p>-> This moves your branch pointer to the specified commit but keeps your changes in the staging area</p>
         <li>git reset --soft "required previous version to switch"</li>
+        <p>> This moves your branch pointer to the specified commit but keeps your changes in the staging area</p>
         <h3>Creating Repository and Pushing Code to GitHub:</h3>
         <p>After creating repository in GitHub use below 3 commands to push your code finally to GitHub</p>
-        <p>-> Add remote:</p>
-        <li>git remote add origin git@github.com:Nikhilesh-Kumar/Git-and-GitHub.git</li>
-        <p>-> Rename branch to main:</p>
+        <p> Add remote :</p>
+        <li>git remote add origin "Your repository link in GitHub"</li>
+        <p> Rename branch to main :</p>
         <li>git branch -M main</li>
-        <p>-> Push to GitHub:</p>
+        <p> Push to GitHub :</p>
         <li>git push -u origin main</li>
         <h3>Pulling a repository/project on local</h3>
         <p>To import the project from repository to local system</p>
@@ -60,16 +60,17 @@
         <p>To import the recent changes</p>
         <li>git pull (all changes are pulled on local system)</li>
         <h3>Working with branches</h3>
-        <p>Check current branch</p>
+        <p>Check current branch :</p>
         <li>git branch</li>
-        <p>Switch to another branch:</p>
-        <li>git checkout "branch-name"</li>
+        <p>Move to another branch :</p>
+        <li>git checkout "branch_name" ( branch_name = the specified branch you want to switch to: )</li><br>
         <li>git switch (modern alternative to git checkout)</li>
         <h3>Merging two branch</h3>
         <p>Merge a branch into the current branch:</p>
-        <li>git merge (branch-name)</li>
+        <li>git merge (branch_name) ( branch_name = the specified branch you want to merge into your main branch: )</li>
         <p>You don’t merge “local branch name” into main directly. Instead, you merge feature branch</p>
-        <p><li>git merge</li>merges the specified branch into the current branch</p>
+        <p>git merge merges the specified branch into the main branch</p>
+        <p>To merge you should be on the main branch</p>
         <br><br>
     </div>
 </body>
